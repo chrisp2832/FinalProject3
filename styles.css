@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.two-column {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.hoverable {
+    transition: transform 0.3s ease;
+}
+
+.hoverable:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    padding: 2px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        padding: 10px;
+    }
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: rgb(252, 7, 7);
+    color: white;
+    border: ridge 4px grey;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  button:hover {
+    background-color: rgb(189, 92, 7);
+  }
+  
